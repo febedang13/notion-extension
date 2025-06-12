@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+    <div class="cover" id="cover">
+        <!-- create image here -->
+    </div>
+    <div class="property">
+        <span class="property-name">Title</span>
+        <input type="text" id="title" placeholder="Title" />
+    </div>
+    <div class="property">
+        <span class="property-name">Author(s)</span>
+        <input type="text" id="authors" placeholder="Author(s)" />
+    </div>
+    <div class="property">
+        <span class="property-name">Genre</span>
+        <button id="fic" class="btn-custom">Fiction</button>
+        <button id="nonfic" class="btn-custom">Nonfiction</button>
+    </div>
+    <div class="subgenre">
+        <span class="property-name" style="margin-bottom: 0.25em;">Subgenre</span>
+        <div id="sgenre-container"></div>
+    </div>
+    <div class="property">
+        <span class="property-name">Pages</span>
+        <input type="text" id="pages" placeholder="# pages" />
+    </div>
+    <div class="property">
+        <span class="property-name">Finished</span>
+        <input type="date" id="finished" />
+    </div>
+    <div class="property">
+        <span class="property-name">Blurb</span>
+        <textarea id="blurb"></textarea>
+    </div>
+    <div class="property">
+        <span class="property-name">Score</span>
+        <select id="score">
+            <option id="aKAT" value="5">&#11088&#11088&#11088&#11088&#11088</option>
+            <option id="B<h:" value="4">&#11088&#11088&#11088&#11088</option>
+            <option id=";}:`" value="3">&#11088&#11088&#11088</option>
+            <option id="L=K<" value="2">&#11088&#11088</option>
+            <option id="{uox" value="1">&#11088</option>
+        </select>
+    </div>
+    <button id="notion-add" class="notion-add">Add to Notion</button>
+    <div style="clear: both;"></div>
+    <div class="modal-background">
+        <div class="modal">
+            <span style="font-weight: 800; font-style: italic;"></span>
+            <br>
+            <span>added to Notion</span>
+        </div>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

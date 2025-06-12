@@ -1,0 +1,128 @@
+@import 'https://unpkg.com/open-props';
+
+@import 'https://unpkg.com/open-props/normalize.min.css';
+@import 'https://unpkg.com/open-props/buttons.min.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
+
+
+:root {
+    --font-size-00: 0.6rem;
+}
+
+body {
+    margin: auto;
+    padding: var(--size-3) var(--size-2);
+    font: 400 var(--font-size-1) "Figtree";
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 7em;
+    object-fit: cover;
+}
+
+.property {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.subgenre {
+    padding: 0.5em;
+}
+
+.property-name {
+    font-weight: 700;
+}
+
+input[type="text"] {
+    padding: 0.75em;
+    margin-left: 1em;
+    width: 100%;
+    background-color: var(--surface-1);
+    border: var(--gray-4) var(--border-size-1) solid;
+    border-radius: var(--radius-drawn-1);
+    box-shadow: var(--shadow-2);
+}
+
+select {
+    padding: 0.75em;
+    margin-left: 1em;
+    width: 100%;
+    background-color: var(--surface-1);
+    border: var(--gray-4) var(--border-size-1) solid;
+    border-radius: var(--radius-drawn-1);
+    box-shadow: var(--shadow-2);
+}
+
+input[type="date"] {
+    padding: 0.75em;
+    margin-left: 1em;
+    width: 100%;
+    background-color: var(--surface-1);
+    border: var(--gray-4) var(--border-size-1) solid;
+    border-radius: var(--radius-drawn-1);
+    box-shadow: var(--shadow-2);
+}
+
+textarea {
+    padding: 1em;
+    margin-left: 1em;
+    width: 100%;
+    height: 10em;
+    background-color: var(--surface-1);
+    border: var(--gray-4) var(--border-size-1) solid;
+    border-radius: var(--radius-drawn-1);
+    box-shadow: var(--shadow-2);
+    resize: none;
+}
+
+.btn-custom {
+    margin: 0.25em -0.5em 0.25em 1em;
+    border-radius: var(--radius-round);
+    --_bg: white;
+    --_border: var(--gray-4);
+    --_text: var(--gray-6);
+    font-weight: 600;
+    --_size: var(--font-size-0);
+}
+
+.select {
+    --_bg: black;
+    --_border: var(--gray-4);
+    --_text: white;
+}
+
+.notion-add {
+    --_bg: black;
+    --_border: var(--gray-4);
+    --_text: white;
+    float: right;
+    margin-top: 0.5em;
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 12em;
+    padding: 1.25em 1.5em;
+    box-shadow: var(--shadow-4);
+    text-align: center;
+    font-weight: 600;
+    border-radius: var(--radius-3);
+}

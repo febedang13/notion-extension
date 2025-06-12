@@ -1,0 +1,44 @@
+{
+  "name": "notionreads",
+  "version": "0.1.0",
+  "description": "Save books to Notion",
+  "icons": {
+    "16": "assets/notion-icon16.png",
+    "32": "assets/notion-icon32.png",
+    "48": "assets/notion-icon48.png",
+    "128": "assets/notion-icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "https://*.goodreads.com/*",
+    "*://api.notion.com/*",
+    "*://www.notion.so/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/notion-icon48.png"
+      ],
+      "matches": [
+        "https://*.goodreads.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/notion-icon16.png",
+      "32": "assets/notion-icon32.png"
+    },
+    "default_title": "notionreads"
+  },
+  "manifest_version": 3
+}
